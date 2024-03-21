@@ -20,6 +20,13 @@
 .text-white {
   color: var(--whiteF);
 }
+/* buttons */
+.btn {
+  background-color: var(--black0);
+  height: 50px;
+  width: 152px;
+  color: var(--whiteF);
+}
 
 .text-bold {
   font-weight: 800;
@@ -89,4 +96,37 @@
 }
 #icon-nav ul li a {
   text-decoration: none;
+}
+
+/* hero slicer 1 */
+
+#hero-slider-area {
+  padding: 0 20px;
+}
+
+.hero-1 {
+  /* width: 100%; */
+  height: 85vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  /* overflow: hidden; */
+}
+.slider-1 {
+  background: url(img/hero-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider-2 {
+  background: url(img/hero-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: end;
+}
+.slider-3 {
+  background: url(img/hero-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
