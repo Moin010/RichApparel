@@ -1,3 +1,6 @@
+#dummy {
+  height: 100vh;
+}
 *,
 *::after,
 *::before {
@@ -29,9 +32,11 @@
   cursor: pointer;
 }
 a.btn {
-  padding: 12px 30px;
+  padding: 14px 0px;
+  text-align: center;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 500;
 }
 .btn-sm {
   height: 30px;
@@ -114,6 +119,11 @@ a.btn {
   text-decoration: none;
 }
 
+/* msg icon correction */
+#icon-nav > ul > li:nth-child(4) > img {
+  margin-top: 5px;
+}
+
 /* hero slider 1 */
 
 #hero-slider-area {
@@ -132,7 +142,7 @@ a.btn {
   background-repeat: no-repeat !important;
   /* overflow: hidden; */
 }
-.slick-track {
+#hero-slider-area .slick-track {
   height: 85vh;
   position: relative;
 }
@@ -173,8 +183,7 @@ a.btn {
 /*  home image carousel*/
 
 .image-carousel-1 {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 0 60px;
 }
 .image-carousel {
   margin: 0 5px;
@@ -191,7 +200,7 @@ a.btn {
 .image-carousel-arrow {
   position: absolute;
   z-index: 100;
-  top: 22%;
+  top: 50%;
   cursor: pointer;
 }
 
@@ -202,6 +211,61 @@ a.btn {
   right: 10px;
 }
 /* signup offer */
+#home-offer-and-signup-area {
+  background-image: url(img/home-signup-offer.jpg);
+  background-size: 100% 180%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 30px;
+  height: 513px;
+  margin: 40px auto;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 #home-offer-and-signup {
-  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* home display images */
+
+#home-display-image-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0px 32px; */
+}
+.home-display-image {
+  width: 210px;
+  height: 210px;
+  overflow: hidden;
+}
+.home-display-image img {
+  width: 100%;
+}
+
+/* horizontal-line-before-footer-form */
+#horizontal-line-before-home-form hr {
+  margin: 50px auto;
+  width: 82vw;
+  margin-top: 120px;
+}
+#footer-social-signup-form {
+  display: flex;
+  padding: 0 132px;
+  justify-content: space-between;
+}
+#social-button-area {
+  display: flex;
+  gap: 29px;
+  margin-left: 80px;
 }
