@@ -26,6 +26,22 @@
   height: 50px;
   width: 152px;
   color: var(--whiteF);
+  cursor: pointer;
+}
+a.btn {
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.btn-sm {
+  height: 30px;
+  width: 97 px;
+}
+.btn-lg {
+  width: 204px;
+}
+.btn-xl {
+  width: 324px;
 }
 
 .text-bold {
@@ -98,35 +114,94 @@
   text-decoration: none;
 }
 
-/* hero slicer 1 */
+/* hero slider 1 */
 
 #hero-slider-area {
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 .hero-1 {
   /* width: 100%; */
   height: 85vh;
-  padding: 40px;
-  display: flex;
+  padding: 0 2%;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   /* overflow: hidden; */
+}
+.slick-track {
+  height: 85vh;
+  position: relative;
 }
 .slider-1 {
   background: url(img/hero-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .slider-2 {
   background: url(img/hero-2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   align-items: end;
 }
 .slider-3 {
   background: url(img/hero-3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+.hero-slider-1-arrow {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  cursor: pointer;
+}
+.left-arrow-white {
+  left: 30px;
+}
+.right-arrow-white {
+  right: 30px;
+}
+
+/* shop collection area */
+
+.collection-heading-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 250px;
+}
+
+/*  home image carousel*/
+
+.image-carousel-1 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.image-carousel {
+  margin: 0 5px;
+  height: 315px !important;
+  width: 315px !important;
+  overflow: hidden;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.image-carousel img {
+  height: 150%;
+}
+.image-carousel-arrow {
+  position: absolute;
+  z-index: 100;
+  top: 22%;
+  cursor: pointer;
+}
+
+.left-arrow-black {
+  left: 10px;
+}
+.right-arrow-black {
+  right: 10px;
+}
+/* signup offer */
+#home-offer-and-signup {
+  margin-left: 100px;
 }
