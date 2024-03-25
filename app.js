@@ -1,3 +1,17 @@
+const navWeapper = document.querySelector(".nav-wrapper");
+const crossBtn = document.querySelector(".cross-icon");
+const hamburgerBtn = document.querySelector(".hamburger-icon");
+
+console.log(hamburgerBtn);
+console.log(crossBtn);
+
+hamburgerBtn.addEventListener("click", () => {
+  navWeapper.classList.add("mobile-nav");
+});
+crossBtn.addEventListener("click", () => {
+  navWeapper.classList.remove("mobile-nav");
+});
+
 // slick slider start
 
 // home hero slider
