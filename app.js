@@ -29,6 +29,35 @@ $(".image-carousel-1").slick({
     '<img class="left-arrow-black image-carousel-arrow" src="img/left-arrow-black.svg" alt=""/>',
   nextArrow:
     '<img class="right-arrow-black image-carousel-arrow" src="img/right-arrow-black.svg" alt=""/>',
+  responsive: [
+    {
+      breakpoint: 1420,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 499,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+  ],
 });
 
 // slick slider end
