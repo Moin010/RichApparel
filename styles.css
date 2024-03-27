@@ -85,9 +85,10 @@ a.btn {
   gap: 40px;
   background-color: var(--whiteF);
 }
-#nav-area .logo {
+#nav-area .logo a {
   font-size: 32px;
   cursor: pointer;
+  text-decoration: none;
 }
 #nav {
   display: flex;
@@ -397,25 +398,15 @@ a.btn {
     grid-template-columns: repeat(3, 1fr);
     padding: 0px 105px;
   }
-}
-@media screen and (max-width: 785px) {
-  /* newsletter banner */
-  #newsletter-banner a {
-    text-align: center;
-    padding: 10px;
-  }
-  .signup-form-area form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* footer */
+
   #footer-social-signup-form {
     flex-direction: column;
+    gap: 40px;
   }
+}
+@media screen and (max-width: 785px) {
+  /* footer */
+
   div#social-button-area {
     margin: auto;
   }
@@ -429,6 +420,19 @@ a.btn {
     flex-direction: column;
     gap: 20px;
   }
+  /* newsletter banner */
+  #newsletter-banner a {
+    text-align: center;
+    padding: 10px;
+  }
+  .signup-form-area form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
   /* HERO SLIDER */
   .hero-1 {
     align-items: center;
@@ -547,4 +551,75 @@ a.btn {
     top: 30px;
     right: 40px;
   }
+}
+
+/* shop page */
+/* shop page */
+/* shop page */
+/* shop page */
+
+#page-headline-and-discription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 30%;
+  margin: 40px auto;
+}
+.page-headline {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black1);
+}
+.page-discriotion {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--black7);
+  text-align: center;
+}
+.product-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 50px;
+  padding: 0 25px;
+}
+.side-bar ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.side-bar ul li h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.side-bar ul li a {
+  text-decoration: none;
+  tab-size: 15px;
+  line-height: 31px;
+  padding-bottom: 2px;
+}
+.side-bar ul li a:hover {
+  border-bottom: 1px solid var(--black0);
+}
+.bread-crum-with-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.faded-text {
+  color: var(--whitec4);
+}
+.filter-area {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+#product-card-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px 13px;
+}
+.product-card:hover {
+  box-shadow: var(--black7);
 }
