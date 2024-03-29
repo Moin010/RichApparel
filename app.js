@@ -21,6 +21,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "01",
     productImg: "img/product images/product1.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -32,6 +33,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "02",
     productImg: "img/product images/product2.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -43,6 +45,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "03",
     productImg: "img/product images/product3.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -54,6 +57,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "04",
     productImg: "img/product images/product4.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -65,6 +69,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "05",
     productImg: "img/product images/product5.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -76,6 +81,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "06",
     productImg: "img/product images/product6.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -87,6 +93,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "07",
     productImg: "img/product images/product7.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -98,6 +105,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "08",
     productImg: "img/product images/product8.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -109,6 +117,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "09",
     productImg: "img/product images/product9.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -120,6 +129,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "10",
     productImg: "img/product images/product10.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -131,6 +141,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "11",
     productImg: "img/product images/product11.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -142,6 +153,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "12",
     productImg: "img/product images/product12.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -153,6 +165,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "13",
     productImg: "img/product images/product13.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -164,6 +177,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "14",
     productImg: "img/product images/product14.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -175,6 +189,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "15",
     productImg: "img/product images/product15.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -186,6 +201,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "16",
     productImg: "img/product images/product16.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -197,6 +213,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "17",
     productImg: "img/product images/product17.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -208,6 +225,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "18",
     productImg: "img/product images/product18.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -219,6 +237,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "19",
     productImg: "img/product images/product19.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -230,6 +249,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "20",
     productImg: "img/product images/product20.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -241,6 +261,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "21",
     productImg: "img/product images/product21.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -252,6 +273,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "22",
     productImg: "img/product images/product22.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -263,6 +285,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "23",
     productImg: "img/product images/product23.jpg",
+    productLink: "single-product-page.html",
   },
   {
     name: "Apple",
@@ -274,6 +297,7 @@ let allDemoProduct = [
     Type: "Red",
     sku: "24",
     productImg: "img/product images/product24.jpg",
+    productLink: "single-product-page.html",
   },
 ];
 
@@ -556,7 +580,7 @@ function displayProducts() {
     let injectProduct = `
     
       <div class="product-card">
-        <a href="#">
+        <a href="${productCard.productLink}">
           <div class="product-img">
             <img src="${productCard.productImg}" />
             <img class="product-like" src="img/heart.png" />
@@ -566,7 +590,7 @@ function displayProducts() {
               <h4>${productCard.name}</h4>
               <p>More Colours Available</p>
             </div>
-            <div class="product-price">${productCard.price}</div>
+            <div class="product-price"> £${productCard.price}</div>
           </div>
         </a>
       </div>
@@ -706,3 +730,22 @@ $(".image-carousel-1").slick({
 });
 
 // slick slider end
+
+// single product page accordian start
+
+let accordion = document.getElementsByClassName("accordion");
+// let accordionCount;
+
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+// single product page accordian end

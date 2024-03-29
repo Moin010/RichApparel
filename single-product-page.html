@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- SLICK CSS START -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- SLICK CSS END -->
+
+    <title>RichApparel</title>
+  </head>
+  <body>
+    <!-- newsletter banner area -->
+    <section id="newsletter-banner">
+      <a href="#" class="text-white"
+        >Sign up to our newsletter to receive 15% off your first order.</a
+      >
+    </section>
+    <!-- <rich-apparel-header></rich-apparel-header> -->
+    <div class="container">
+      <!-- top nav area -->
+
+      <section class="nav-wrapper">
+        <div id="nav-area">
+          <div class="logo">
+            <a href="index.html">
+              <span class="text-bold">Rich</span>Apparel
+            </a>
+          </div>
+
+          <div id="nav">
+            <div id="main-nav">
+              <ul>
+                <li>
+                  <a href="#">New</a>
+                </li>
+                <li>
+                  <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                  <a href="#">Cashmere</a>
+                </li>
+                <li>
+                  <a href="#">SmileyWorld</a>
+                </li>
+                <li>
+                  <a href="#">Case Bears</a>
+                </li>
+                <li>
+                  <a href="#">Lifestyle</a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="icon-nav">
+              <ul>
+                <li>
+                  <img src="img/uk.svg" alt="" />
+                </li>
+                <li>
+                  <img src="img/search.svg" alt="" />
+                </li>
+                <li>
+                  <img src="img/heart.svg" alt="" />
+                </li>
+                <li>
+                  <img src="img/message.svg" alt="" />
+                </li>
+                <li>
+                  <img src="img/person.svg" alt="" />
+                </li>
+                <li>
+                  <img src="img/cart.svg" alt="" />
+                  <span id="product-added-menu-counter">0</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cross-icon">
+              <img src="img/cross-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="hamburger-icon">
+            <img src="img/hamburger-icon.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- page container -->
+      <section class="single-product-details-area">
+        <div class="single-product-images">
+          <img src="img/product images/product24.jpg" />
+          <img src="img/product images/product2.jpg" />
+          <img src="img/product images/product4.jpg" />
+        </div>
+        <div class="single-product-details-with-bredcrum">
+          <div class="bread-crum">
+            <span class="faded-text">Home / Cashmere</span>
+          </div>
+          <div class="single-product-heading">
+            SmileyWorld® Cool White Smiley Wool-Cashmere T-Shirt
+          </div>
+          <div class="single-product-price">£275</div>
+          <div class="single-product-discription">
+            Play it cool in this oversized knitted T-shirt. Made from wool with
+            a touch of cashmere for added softness, it has a luxuriously
+            lightweight handle. The yellow intarsia incorporates two smiley
+            faces within the bold block lettering.
+            <div>Oversized Fit</div>
+            <div>Model is 5ft 10in and wears a UK size 8/Small.</div>
+          </div>
+          <div class="size-selector-area">
+            <div class="size-lebel-area">
+              <p>All sizes are UK sizes</p>
+              <p>Size Guide</p>
+            </div>
+            <!-- filter by size -->
+            <div class="single-product-size-filter">
+              <select
+                id="single-product-filter-by-size"
+                class="btn-drop-single-product"
+                onchange="shopPageFilterSizeDropdown()"
+              >
+                <option class="single-product-dropdown" selected="selected">
+                  SELECT SIZE<img src="img/drop-down.png" />
+                </option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <button class="add-to-bag-btn">Add to Bag</button>
+          </div>
+          <div class="single-product-add-to-wishlist-area">
+            <a href="#">
+              <img src="img/heart.png" alt="" />
+              <p>Add to Wishlist</p>
+            </a>
+          </div>
+          <div class="single-product-accordian-area">
+            <button class="accordion">
+              DETAILS <img src="img/drop-down.png" />
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Send as a gift <img src="img/drop-down.png" />
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <button class="accordion">
+              MEASUREMENTS <img src="img/drop-down.png" />
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <button class="accordion">
+              CARE <img src="img/drop-down.png" />
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <button class="accordion">
+              SUSTAINABILITY <img src="img/drop-down.png" />
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Delivery & Returns <img src="img/drop-down.png" />
+            </button>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer area start -->
+
+      <!-- <rich-apparel-footer></rich-apparel-footer> -->
+
+      <!-- social icon and form area -->
+      <section id="footer-social-signup-form">
+        <div id="social-button-area">
+          <div class="social-icon">
+            <img src="img/facebook-black.svg" alt="" />
+          </div>
+          <div class="social-icon">
+            <img src="img/twiter-black.svg" alt="" />
+          </div>
+          <div class="social-icon">
+            <img src="img/instagram-black.svg" alt="" />
+          </div>
+        </div>
+        <div class="signup-form-area">
+          <h4>Sign up and get 15% off</h4>
+          <form>
+            <input class="footer-signup-form" type="text" placeholder="Email" />
+            <button class="btn btn-sm">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- footer link area -->
+      <section class="footer-link-area container">
+        <div class="footer-link-col-1">
+          <h5>Customer Services</h5>
+          <ul>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Delivery & Returns</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Privacy & Cookie Policy</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Klarna</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link-col-2">
+          <h5>Contact Us</h5>
+          <ul>
+            <li>
+              <h6>Customer Service</h6>
+            </li>
+            <li>
+              <p>+44 (0) 207 0164312</p>
+            </li>
+            <li>
+              <p>Email Us</p>
+            </li>
+            <li>
+              <h6>Wholesale Enquiries</h6>
+            </li>
+            <li>
+              <p>+44 (0) 207 0164312</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link-col-3">
+          <h5>Information</h5>
+          <ul>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">What is Cashmere?</a>
+            </li>
+            <li>
+              <a href="#">Our Supply Chain</a>
+            </li>
+            <li>
+              <a href="#">Brand Values</a>
+            </li>
+            <li>
+              <a href="#">Stories</a>
+            </li>
+            <li>
+              <a href="#">Sweater Fit Guide</a>
+            </li>
+            <li>
+              <a href="#">Cashmere Care Guide</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer copyright -->
+      <section class="footer-copyright-area">
+        <p>Copyright 2022 ©<span class="text-bold"> RichApparel</span></p>
+      </section>
+      <!-- footer area end -->
+    </div>
+
+    <!-- <section id="dummy"></section> -->
+    <!-- JS -->
+
+    <!-- SLICK JS START -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"
+      integrity="sha512-fDGBclS3HUysEBIKooKWFDEWWORoA20n60OwY7OSYgxGEew9s7NgDaPkj7gqQcVXnASPvZAiFW8DiytstdlGtQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- SLICK JS END -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

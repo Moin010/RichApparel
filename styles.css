@@ -18,6 +18,9 @@
   --black7: #777777;
   --whiteF: #ffffff;
   --whitec4: #c4c4c4;
+  --whiteef: #efefef;
+  --whiteec: #ececec;
+  --whitee7: #e7e7e7;
 }
 
 /* utilitis */
@@ -775,8 +778,114 @@ img.product-like {
   .filter-area {
     gap: 15px;
     grid-template-columns: 1fr 1fr;
+  }
+}
+/* single */
+/* product */
+/* page */
+
+/* single product page accordian */
+.accordion {
+  background-color: var(--whiteF);
+  color: var(--black3);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--whitee7);
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
 }
 
+.active,
+.accordion:hover {
+  background-color: var(--whiteec);
+}
 
-  }
+.panel {
+  padding: 10px 18px;
+  display: none;
+  overflow: hidden;
+}
+
+/* single product page */
+
+.single-product-details-area {
+  display: grid;
+  grid-template-columns: 9fr 3fr 1fr;
+}
+.single-product-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-right: 60px;
+}
+.single-product-images img {
+  width: 100%;
+}
+.single-product-details-with-bredcrum .bread-crum {
+  border-top: 1px solid var(--whiteef);
+  padding-top: 20px;
+}
+.single-product-heading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  padding-top: 15px;
+}
+.single-product-price {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 27.6px;
+}
+.single-product-discription {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  padding: 25px 0px;
+}
+.single-product-discription div:first-child {
+  margin-top: 20px;
+}
+.size-lebel-area {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 15px;
+}
+.size-lebel-area p {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 12.65px;
+  letter-spacing: 1.100000023841858px;
+}
+select#single-product-filter-by-size {
+  width: 100%;
+  height: 50px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 24.2px;
+  letter-spacing: 1.100000023841858px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.add-to-bag-btn {
+  /* padding: 15px 135px; */
+  width: 100%;
+  height: 50px;
+  background-color: var(--black0);
+  color: var(--whiteF);
+  text-decoration: none;
+  cursor: pointer;
+}
+.single-product-add-to-wishlist-area {
+  margin-top: 65px;
+  margin-bottom: 28px;
+}
+.single-product-add-to-wishlist-area a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
