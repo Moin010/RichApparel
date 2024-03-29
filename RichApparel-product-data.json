@@ -7,7 +7,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "01"
+    "sku": "01",
+    "productImg": "img/product images/product1.jpg"
   },
   {
     "name": "Apple",
@@ -17,7 +18,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "02"
+    "sku": "02",
+    "productImg": "img/product images/product2.jpg"
   },
   {
     "name": "Apple",
@@ -27,7 +29,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "03"
+    "sku": "03",
+    "productImg": "img/product images/product3.jpg"
   },
   {
     "name": "Apple",
@@ -37,7 +40,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "04"
+    "sku": "04",
+    "productImg": "img/product images/product4.jpg"
   },
   {
     "name": "Apple",
@@ -47,7 +51,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "05"
+    "sku": "05",
+    "productImg": "img/product images/product5.jpg"
   },
   {
     "name": "Apple",
@@ -57,7 +62,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "06"
+    "sku": "06",
+    "productImg": "img/product images/product6.jpg"
   },
   {
     "name": "Apple",
@@ -67,7 +73,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "07"
+    "sku": "07",
+    "productImg": "img/product images/product7.jpg"
   },
   {
     "name": "Apple",
@@ -77,7 +84,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "08"
+    "sku": "08",
+    "productImg": "img/product images/product8.jpg"
   },
   {
     "name": "Apple",
@@ -87,7 +95,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "09"
+    "sku": "09",
+    "productImg": "img/product images/product9.jpg"
   },
   {
     "name": "Apple",
@@ -97,7 +106,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "10"
+    "sku": "10",
+    "productImg": "img/product images/product10.jpg"
   },
   {
     "name": "Apple",
@@ -107,7 +117,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "11"
+    "sku": "11",
+    "productImg": "img/product images/product11.jpg"
   },
   {
     "name": "Apple",
@@ -117,7 +128,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "12"
+    "sku": "12",
+    "productImg": "img/product images/product12.jpg"
   },
   {
     "name": "Apple",
@@ -127,7 +139,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "13"
+    "sku": "13",
+    "productImg": "img/product images/product13.jpg"
   },
   {
     "name": "Apple",
@@ -137,7 +150,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "14"
+    "sku": "14",
+    "productImg": "img/product images/product14.jpg"
   },
   {
     "name": "Apple",
@@ -147,7 +161,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "15"
+    "sku": "15",
+    "productImg": "img/product images/product15.jpg"
   },
   {
     "name": "Apple",
@@ -157,7 +172,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "16"
+    "sku": "16",
+    "productImg": "img/product images/product16.jpg"
   },
   {
     "name": "Apple",
@@ -167,7 +183,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "17"
+    "sku": "17",
+    "productImg": "img/product images/product17.jpg"
   },
   {
     "name": "Apple",
@@ -177,7 +194,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "18"
+    "sku": "18",
+    "productImg": "img/product images/product18.jpg"
   },
   {
     "name": "Apple",
@@ -187,7 +205,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "19"
+    "sku": "19",
+    "productImg": "img/product images/product19.jpg"
   },
   {
     "name": "Apple",
@@ -197,7 +216,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "20"
+    "sku": "20",
+    "productImg": "img/product images/product20.jpg"
   },
   {
     "name": "Apple",
@@ -207,7 +227,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "21"
+    "sku": "21",
+    "productImg": "img/product images/product21.jpg"
   },
   {
     "name": "Apple",
@@ -217,7 +238,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "22"
+    "sku": "22",
+    "productImg": "img/product images/product22.jpg"
   },
   {
     "name": "Apple",
@@ -227,7 +249,8 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "23"
+    "sku": "23",
+    "productImg": "img/product images/product23.jpg"
   },
   {
     "name": "Apple",
@@ -237,6 +260,7 @@
     "Fit": "Red",
     "Pattern": "Red",
     "Type": "Red",
-    "sku": "24"
+    "sku": "24",
+    "productImg": "img/product images/product24.jpg"
   }
 ]

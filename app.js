@@ -8,6 +8,275 @@ const fitFilter = document.getElementById("filter-by-fit");
 const patternFilter = document.getElementById("filter-by-pattern");
 const typeFilter = document.getElementById("filter-by-type");
 
+// all demo product array
+
+let allDemoProduct = [
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "01",
+    productImg: "img/product images/product1.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "02",
+    productImg: "img/product images/product2.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "03",
+    productImg: "img/product images/product3.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "04",
+    productImg: "img/product images/product4.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "05",
+    productImg: "img/product images/product5.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "06",
+    productImg: "img/product images/product6.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "07",
+    productImg: "img/product images/product7.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "08",
+    productImg: "img/product images/product8.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "09",
+    productImg: "img/product images/product9.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "10",
+    productImg: "img/product images/product10.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "11",
+    productImg: "img/product images/product11.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "12",
+    productImg: "img/product images/product12.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "13",
+    productImg: "img/product images/product13.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "14",
+    productImg: "img/product images/product14.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "15",
+    productImg: "img/product images/product15.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "16",
+    productImg: "img/product images/product16.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "17",
+    productImg: "img/product images/product17.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "18",
+    productImg: "img/product images/product18.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "19",
+    productImg: "img/product images/product19.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "20",
+    productImg: "img/product images/product20.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "21",
+    productImg: "img/product images/product21.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "22",
+    productImg: "img/product images/product22.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "23",
+    productImg: "img/product images/product23.jpg",
+  },
+  {
+    name: "Apple",
+    price: "Apple",
+    Size: "Apple",
+    Colour: "Large",
+    Fit: "Red",
+    Pattern: "Red",
+    Type: "Red",
+    sku: "24",
+    productImg: "img/product images/product24.jpg",
+  },
+];
+
 // header templet start
 class RichApparelHeader extends HTMLElement {
   connectedCallback() {
@@ -248,6 +517,121 @@ function shopPageFilterTypeDropdown() {
 }
 
 // shop page drop down end
+
+// shop page pagination start
+
+let array = [];
+let arrayLength = 0;
+let activePageDisplaiedProduct = 6; //table Size
+let startIndex = 1;
+let endIndex = 0;
+let currentIndex = 1;
+let maxIndex = 0;
+
+// set and remove active class
+function heilightIndexButton() {
+  startIndex = (currentIndex - 1) * activePageDisplaiedProduct + 1;
+  endIndex = startIndex + activePageDisplaiedProduct - 1;
+  if (endIndex > arrayLength) {
+    endIndex = arrayLength;
+  }
+
+  $(".index-buttons button").removeClass("active");
+  $(`.index-buttons button[index="${currentIndex}"]`).addClass("active");
+  displayProducts();
+}
+
+// add products in dom
+
+function displayProducts() {
+  $("#product-card-area .product-card").remove();
+  let firstProduct = startIndex - 1;
+  let lastProduct = endIndex;
+
+  for (let i = firstProduct; i < lastProduct; i++) {
+    let productCard = array[i];
+
+    console.log(productCard);
+
+    let injectProduct = `
+    
+      <div class="product-card">
+        <a href="#">
+          <div class="product-img">
+            <img src="${productCard.productImg}" />
+            <img class="product-like" src="img/heart.png" />
+          </div>
+          <div class="product-details">
+            <div class="product-name-with-details">
+              <h4>${productCard.name}</h4>
+              <p>More Colours Available</p>
+            </div>
+            <div class="product-price">${productCard.price}</div>
+          </div>
+        </a>
+      </div>
+
+    `;
+
+    $("#product-card-area").append(injectProduct);
+  }
+}
+
+// reseting the variables for the calculations
+
+function preLoadCalculations() {
+  array = allDemoProduct;
+  arrayLength = array.length;
+  maxIndex = arrayLength / activePageDisplaiedProduct;
+
+  if (arrayLength % activePageDisplaiedProduct > 0) {
+    maxIndex++;
+  }
+}
+
+// use buttons to travers pagination
+function prevPage() {
+  if (currentIndex > 1) {
+    currentIndex--;
+    heilightIndexButton();
+  }
+}
+function nextPage() {
+  if (currentIndex < maxIndex) {
+    currentIndex++;
+    heilightIndexButton();
+  }
+}
+function indexPageMove(index) {
+  currentIndex = parseInt(index);
+  heilightIndexButton();
+}
+
+// display pagination buttons
+
+function displayIndexButtons() {
+  preLoadCalculations();
+
+  $(".index-buttons button").remove();
+  $(".index-buttons").append(
+    `<button onclick="prevPage()"><img src="img/left-arrow.png" alt="" /></button>`
+  );
+
+  for (let i = 1; i <= maxIndex; i++) {
+    $(".index-buttons").append(
+      `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
+    );
+  }
+
+  $(".index-buttons").append(
+    `<button onclick="nextPage()"><img src="img/right-arrow.png" alt="" /></button>`
+  );
+  heilightIndexButton();
+}
+
+displayIndexButtons();
+
+// shop page pagination end
 
 // Mobile nav buttons start
 hamburgerBtn.addEventListener("click", () => {

@@ -53,6 +53,10 @@ a.btn {
 .text-bold {
   font-weight: 800;
 }
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 /* top News Letter banner */
 
@@ -75,6 +79,9 @@ a.btn {
 .hamburger-icon {
   display: none;
 }
+.cross-icon {
+  position: absolute;
+}
 #nav-area .cross-icon img {
   display: none;
 }
@@ -92,7 +99,7 @@ a.btn {
 }
 #nav {
   display: flex;
-  gap: 200px;
+  gap: 150px;
   justify-content: space-around;
 }
 
@@ -288,9 +295,25 @@ a.btn {
 }
 #footer-social-signup-form {
   display: flex;
-  padding: 0 132px;
   align-items: center;
   justify-content: space-between;
+  margin: 80px auto;
+  position: relative;
+}
+#footer-social-signup-form::before,
+#footer-social-signup-form::after {
+  content: "";
+  margin: 0 auto;
+  width: 80%;
+  height: 1px;
+  background: var(--black3);
+  position: absolute;
+  bottom: -30px;
+  left: 10%;
+  z-index: 10;
+}
+#footer-social-signup-form::before {
+  top: -30px;
 }
 #social-button-area {
   display: flex;
@@ -322,10 +345,6 @@ a.btn {
   margin-bottom: 80px;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
 .footer-link-area {
   text-align: center;
   display: flex;
@@ -481,6 +500,10 @@ a.btn {
 /* nav */
 
 @media screen and (max-width: 1100px) {
+  .cross-icon {
+    top: 30px;
+    right: 10px;
+  }
   .hamburger-icon {
     display: block;
   }
@@ -580,8 +603,8 @@ a.btn {
 }
 .product-with-sidebar {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 10px;
   padding: 0 25px;
 }
 .side-bar ul li {
@@ -615,11 +638,145 @@ a.btn {
   gap: 30px;
   margin-bottom: 30px;
 }
+.btn-drop {
+  border: 0;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16.5px;
+  letter-spacing: 1.649999976158142px;
+}
+.btn-drop option {
+  color: var(--black1);
+  border: 0;
+}
+.btn-drop option:hover {
+  color: var(--whitec4);
+  background-color: var(--black0);
+}
+
 #product-card-area {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 55px 13px;
+  /* gap: 55px 100px; */
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
 }
 .product-card:hover {
-  box-shadow: var(--black7);
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.75);
+}
+.product-card a {
+  text-decoration: none;
+}
+.product-img {
+  position: relative;
+}
+.product-img img {
+  width: 100%;
+}
+img.product-like {
+  width: auto;
+}
+.product-like {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.product-details {
+  padding: 8px;
+  display: flex;
+  gap: 84px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.product-name-with-details h4 {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.product-name-with-details p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.8px;
+}
+.product-price {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+}
+.pagination-area {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+.index-buttons button {
+  background-color: var(--whiteF);
+  border: none;
+  color: var(--black7);
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.index-buttons button.active,
+.index-buttons button:hover {
+  color: var(--black0);
+}
+
+/* shop page media */
+
+@media screen and (max-width: 1100px) {
+  #product-card-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-with-sidebar {
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #product-card-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .product-with-sidebar {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 25px;
+  }
+  .bread-crum-with-dropdown {
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+  }
+  #page-headline-and-discription {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #product-card-area {
+    grid-template-columns: 1fr;
+  }
+  .filter-area {
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+  }
 }
