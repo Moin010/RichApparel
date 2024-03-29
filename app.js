@@ -7,6 +7,7 @@ const colourFilter = document.getElementById("filter-by-colour");
 const fitFilter = document.getElementById("filter-by-fit");
 const patternFilter = document.getElementById("filter-by-pattern");
 const typeFilter = document.getElementById("filter-by-type");
+const shopPageLoader = document.querySelector(".shop-page-loader");
 
 // all demo product array
 
@@ -603,8 +604,12 @@ function displayProducts() {
 
 // reseting the variables for the calculations
 
-function preLoadCalculations() {
-  array = allDemoProduct;
+function preLoadCalculations(changedArray) {
+  if (changedArray) {
+    array = changedArray;
+  } else {
+    array = allDemoProduct;
+  }
   arrayLength = array.length;
   maxIndex = arrayLength / activePageDisplaiedProduct;
 
@@ -618,17 +623,20 @@ function prevPage() {
   if (currentIndex > 1) {
     currentIndex--;
     heilightIndexButton();
+    shopPageLoaderDisplay();
   }
 }
 function nextPage() {
   if (currentIndex < maxIndex) {
     currentIndex++;
     heilightIndexButton();
+    shopPageLoaderDisplay();
   }
 }
 function indexPageMove(index) {
   currentIndex = parseInt(index);
   heilightIndexButton();
+  shopPageLoaderDisplay();
 }
 
 // display pagination buttons
@@ -749,3 +757,30 @@ for (let i = 0; i < accordion.length; i++) {
 }
 
 // single product page accordian end
+
+// shop page loader start
+// variable = shopPageLoader
+
+function shopPageLoaderDisplay() {
+  shopPageLoader.classList.add("loaderDisplayShow");
+  setTimeout(removeLoaderDisplayShow, 200);
+  function removeLoaderDisplayShow() {
+    shopPageLoader.classList.remove("loaderDisplayShow");
+  }
+}
+
+// shop page loader end
+
+// test
+
+let dekhao;
+
+function pingPong(hello) {
+  if (hello) {
+    dekhao = `"hello ache" ${hello}`;
+  } else {
+    dekhao = "hello nai";
+  }
+  console.log(dekhao);
+}
+pingPong("s");
