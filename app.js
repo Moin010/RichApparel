@@ -575,7 +575,7 @@ function displayProducts() {
   for (let i = firstProduct; i < lastProduct; i++) {
     let productCard = array[i];
 
-    console.log(productCard);
+    // console.log(productCard);
 
     let injectProduct = `
     
