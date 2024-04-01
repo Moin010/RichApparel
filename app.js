@@ -17,299 +17,305 @@ window.onscroll = () => {
     navWeapper.classList.remove("page-scrolled");
   }
 };
-
+let allDemoProduct;
 // all demo product array
+async function getProductInfo() {
+  let importedProduct = await fetch("RichApparel-product-data.json");
+  allDemoProduct = await importedProduct.json();
+  return allDemoProduct;
+}
+console.log(getProductInfo());
 
-let allDemoProduct = [
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "01",
-    productImg: "img/product images/product1.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "02",
-    productImg: "img/product images/product2.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "03",
-    productImg: "img/product images/product3.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "04",
-    productImg: "img/product images/product4.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "05",
-    productImg: "img/product images/product5.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "06",
-    productImg: "img/product images/product6.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "07",
-    productImg: "img/product images/product7.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "08",
-    productImg: "img/product images/product8.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "09",
-    productImg: "img/product images/product9.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "10",
-    productImg: "img/product images/product10.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "11",
-    productImg: "img/product images/product11.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "12",
-    productImg: "img/product images/product12.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "13",
-    productImg: "img/product images/product13.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "14",
-    productImg: "img/product images/product14.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "15",
-    productImg: "img/product images/product15.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "16",
-    productImg: "img/product images/product16.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "17",
-    productImg: "img/product images/product17.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "18",
-    productImg: "img/product images/product18.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "19",
-    productImg: "img/product images/product19.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "20",
-    productImg: "img/product images/product20.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "21",
-    productImg: "img/product images/product21.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "22",
-    productImg: "img/product images/product22.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "23",
-    productImg: "img/product images/product23.jpg",
-    productLink: "single-product-page.html",
-  },
-  {
-    name: "Apple",
-    price: "Apple",
-    Size: "Apple",
-    Colour: "Large",
-    Fit: "Red",
-    Pattern: "Red",
-    Type: "Red",
-    sku: "24",
-    productImg: "img/product images/product24.jpg",
-    productLink: "single-product-page.html",
-  },
-];
+// let allDemoProduct = [
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "01",
+//     productImg: "img/product images/product1.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "02",
+//     productImg: "img/product images/product2.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "03",
+//     productImg: "img/product images/product3.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "04",
+//     productImg: "img/product images/product4.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "05",
+//     productImg: "img/product images/product5.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "06",
+//     productImg: "img/product images/product6.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "07",
+//     productImg: "img/product images/product7.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "08",
+//     productImg: "img/product images/product8.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "09",
+//     productImg: "img/product images/product9.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "10",
+//     productImg: "img/product images/product10.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "11",
+//     productImg: "img/product images/product11.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "12",
+//     productImg: "img/product images/product12.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "13",
+//     productImg: "img/product images/product13.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "14",
+//     productImg: "img/product images/product14.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "15",
+//     productImg: "img/product images/product15.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "16",
+//     productImg: "img/product images/product16.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "17",
+//     productImg: "img/product images/product17.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "18",
+//     productImg: "img/product images/product18.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "19",
+//     productImg: "img/product images/product19.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "20",
+//     productImg: "img/product images/product20.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "21",
+//     productImg: "img/product images/product21.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "22",
+//     productImg: "img/product images/product22.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "23",
+//     productImg: "img/product images/product23.jpg",
+//     productLink: "single-product-page.html",
+//   },
+//   {
+//     name: "Apple",
+//     price: "Apple",
+//     Size: "Apple",
+//     Colour: "Large",
+//     Fit: "Red",
+//     Pattern: "Red",
+//     Type: "Red",
+//     sku: "24",
+//     productImg: "img/product images/product24.jpg",
+//     productLink: "single-product-page.html",
+//   },
+// ];
 
 // header templet start
 class RichApparelHeader extends HTMLElement {
@@ -670,7 +676,7 @@ function shopPageFilterTypeDropdown() {
 
 let array = [];
 let arrayLength = 0;
-let activePageDisplaiedProduct = 6; //table Size
+let activePageDisplaiedProduct = 6; //products per page
 let startIndex = 1;
 let endIndex = 0;
 let currentIndex = 1;
@@ -780,18 +786,22 @@ function displayProducts() {
 
 // reseting the variables for the calculations
 
-function preLoadCalculations(changedArray) {
+async function preLoadCalculations(changedArray) {
+  let allDemoProduct = await getProductInfo();
   if (changedArray) {
     array = changedArray;
   } else {
     array = allDemoProduct;
   }
+
   arrayLength = array.length;
   maxIndex = arrayLength / activePageDisplaiedProduct;
+  console.log(maxIndex);
 
   if (arrayLength % activePageDisplaiedProduct > 0) {
     maxIndex++;
   }
+  return [array, arrayLength, maxIndex];
 }
 
 // use buttons to travers pagination
@@ -813,22 +823,43 @@ function indexPageMove(index) {
   currentIndex = parseInt(index);
   heilightIndexButton();
   shopPageLoaderDisplay();
+  return currentIndex;
 }
 
 // display pagination buttons
 
-function displayIndexButtons() {
-  preLoadCalculations();
+async function displayIndexButtons() {
+  let calculatedVals = await preLoadCalculations();
+
+  maxIndex = calculatedVals[2];
 
   $(".index-buttons button").remove();
   $(".index-buttons").append(
     `<button onclick="prevPage()"><img src="img/left-arrow.png" alt="" /></button>`
   );
 
-  for (let i = 1; i <= maxIndex; i++) {
+  if (maxIndex > 5) {
+    let totalTravers = 3;
+    for (let i = 1; i <= totalTravers; i++) {
+      $(".index-buttons").append(
+        `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
+      );
+    }
+    $(".index-buttons").append(`<button>..</button>`);
     $(".index-buttons").append(
-      `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
+      `<button onclick="indexPageMove(${maxIndex - 1})" index="${
+        maxIndex - 1
+      }">${maxIndex - 1}</button>`
     );
+    $(".index-buttons").append(
+      `<button onclick="indexPageMove(${maxIndex})" index="${maxIndex}">${maxIndex}</button>`
+    );
+  } else {
+    for (let i = 1; i <= maxIndex; i++) {
+      $(".index-buttons").append(
+        `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
+      );
+    }
   }
 
   $(".index-buttons").append(
