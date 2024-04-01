@@ -9,6 +9,15 @@ const patternFilter = document.getElementById("filter-by-pattern");
 const typeFilter = document.getElementById("filter-by-type");
 const shopPageLoader = document.querySelector(".shop-page-loader");
 
+const scrollOnYAxis = navWeapper.scrollHeight;
+window.onscroll = () => {
+  if (window.scrollY >= scrollOnYAxis) {
+    navWeapper.classList.add("page-scrolled");
+  } else {
+    navWeapper.classList.remove("page-scrolled");
+  }
+};
+
 // all demo product array
 
 let allDemoProduct = [
