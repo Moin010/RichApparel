@@ -148,12 +148,17 @@ a.btn {
 ======================
 ======================*/
 
+.nav-wrapper.page-scrolled {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+}
 .nav-wrapper.page-scrolled #nav-area {
   position: fixed;
   top: 0;
   z-index: 1000;
   background-color: var(--whiteF);
-  width: 100vw;
+  width: 100%;
 }
 
 .hero-slider-area.page-scrolled {
