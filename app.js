@@ -823,6 +823,7 @@ function nextPage() {
 }
 function indexPageMove(index) {
   currentIndex = parseInt(index);
+  displayIndexButtons();
   heilightIndexButton();
   shopPageLoaderDisplay();
 }
