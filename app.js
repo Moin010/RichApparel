@@ -885,6 +885,9 @@ async function displayIndexButtons() {
   $(".index-buttons").append(
     `<button onclick="nextPage()"><img src="img/right-arrow.png" alt="" /></button>`
   );
+
+  // scroll to top after pagination
+  scrollTo(0, 250);
   heilightIndexButton();
 }
 
