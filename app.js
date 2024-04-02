@@ -24,7 +24,7 @@ async function getProductInfo() {
   allDemoProduct = await importedProduct.json();
   return allDemoProduct;
 }
-console.log(getProductInfo());
+// console.log(getProductInfo());
 
 // let allDemoProduct = [
 //   {
@@ -796,7 +796,7 @@ async function preLoadCalculations(changedArray) {
 
   arrayLength = array.length;
   maxIndex = arrayLength / activePageDisplaiedProduct;
-  console.log(maxIndex);
+  // console.log(maxIndex);
 
   if (arrayLength % activePageDisplaiedProduct > 0) {
     maxIndex++;
@@ -808,6 +808,7 @@ async function preLoadCalculations(changedArray) {
 function prevPage() {
   if (currentIndex > 1) {
     currentIndex--;
+    displayIndexButtons();
     heilightIndexButton();
     shopPageLoaderDisplay();
   }
@@ -815,6 +816,7 @@ function prevPage() {
 function nextPage() {
   if (currentIndex < maxIndex) {
     currentIndex++;
+    displayIndexButtons();
     heilightIndexButton();
     shopPageLoaderDisplay();
   }
@@ -823,7 +825,6 @@ function indexPageMove(index) {
   currentIndex = parseInt(index);
   heilightIndexButton();
   shopPageLoaderDisplay();
-  return currentIndex;
 }
 
 // display pagination buttons
@@ -838,22 +839,40 @@ async function displayIndexButtons() {
     `<button onclick="prevPage()"><img src="img/left-arrow.png" alt="" /></button>`
   );
 
-  if (maxIndex > 5) {
-    let totalTravers = 3;
-    for (let i = 1; i <= totalTravers; i++) {
-      $(".index-buttons").append(
-        `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
-      );
+  if (maxIndex > 4) {
+    let totalTravers = currentIndex + 1;
+
+    maxIndex = calculatedVals[2];
+
+    if (totalTravers > maxIndex) {
+      totalTravers = maxIndex;
     }
-    $(".index-buttons").append(`<button>..</button>`);
-    $(".index-buttons").append(
-      `<button onclick="indexPageMove(${maxIndex - 1})" index="${
-        maxIndex - 1
-      }">${maxIndex - 1}</button>`
-    );
-    $(".index-buttons").append(
-      `<button onclick="indexPageMove(${maxIndex})" index="${maxIndex}">${maxIndex}</button>`
-    );
+
+    if (currentIndex > 3) {
+      // $(".index-buttons").append(`<button>..</button>`);
+      if (currentIndex < maxIndex) {
+        for (let i = currentIndex - 2; i <= totalTravers; i++) {
+          $(".index-buttons").append(
+            `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
+          );
+        }
+      }
+
+      if (currentIndex >= maxIndex) {
+        for (let i = currentIndex - 3; i <= totalTravers; i++) {
+          $(".index-buttons").append(
+            `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
+          );
+        }
+      }
+    } else {
+      totalTravers = 4;
+      for (let i = 1; i <= totalTravers; i++) {
+        $(".index-buttons").append(
+          `<button onclick="indexPageMove(${i})" index="${i}">${i}</button>`
+        );
+      }
+    }
   } else {
     for (let i = 1; i <= maxIndex; i++) {
       $(".index-buttons").append(
@@ -983,14 +1002,14 @@ function shopPageLoaderDisplay() {
 
 // test
 
-let dekhao;
+// let dekhao;
 
-function pingPong(hello) {
-  if (hello) {
-    dekhao = `"hello ache" ${hello}`;
-  } else {
-    dekhao = "hello nai";
-  }
-  console.log(dekhao);
-}
-pingPong("s");
+// function pingPong(hello) {
+//   if (hello) {
+//     dekhao = `"hello ache" ${hello}`;
+//   } else {
+//     dekhao = "hello nai";
+//   }
+//   console.log(dekhao);
+// }
+// pingPong("s");
