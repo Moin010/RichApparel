@@ -968,7 +968,7 @@ select#single-product-filter-by-size {
   text-decoration: none;
   gap: 2px;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1050px) {
   .single-product-images .single-product-image {
     width: 70%;
   }
@@ -978,5 +978,16 @@ select#single-product-filter-by-size {
   }
   .single-product-details-area {
     grid-template-columns: 3fr 2fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .single-product-details-area {
+    grid-template-columns: 1fr;
+  }
+  .single-product-details-with-bredcrum {
+    margin: 0px 25px;
+  }
+  .single-product-images .single-product-image {
+    width: 45%;
   }
 }
